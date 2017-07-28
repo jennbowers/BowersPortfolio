@@ -1,6 +1,8 @@
 @media (min-width: 768px) {
     .navbar-custom.affix {
-        background-color: #8b8b8e;
+        background-color: rgba(158, 158, 158, 0.9);
+        /*THIS WAS SOLID HEXCODE GRAY*/
+        /*background-color: #8b8b8e;*/
     }
 }
 
