@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .navbar-custom.affix {
+        background-color: #8b8b8e;
+    }
+}
+
+.navbar-custom .navbar-toggle {
+    color: #222c67;
+}
+
+.navbar-custom .nav li a {
+    color: #222c67;
+}
+
+.navbar-brand > .header-logo {
+    width: 100%;
+    margin-top: -36px;
+}
+
+header {
+    background-image: url('../img/computer-plant-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
