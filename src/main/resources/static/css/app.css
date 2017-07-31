@@ -35,3 +35,23 @@ header {
 .timeline:before {
     width: 0px;
 }
+
+section #contact {
+    /*Photo by Damian Zaleski on Unsplash*/
+    background-image: url('../img/send-message.jpg');
+
+}
+
+.skills-bee {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*can't test*/
+/*.skills-bee-node {*/
+    /*border-right: solid 2px #f1f1f1;*/
+/*}*/
+
+/*.fa {*/
+    /*color: #222c67;*/
+/*}*/
