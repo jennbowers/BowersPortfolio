@@ -18,7 +18,7 @@ public class indexController {
 //        Portfolio gamePiece = new Portfolio(4, "/img/portfolio/gamepiece-main-1.png", null, "https://github.com/jennbowers/9.2-Assessment-GamePiece", "Game Piece", "Code the beginnings of a table top game, by creating a game piece that can be moved with x and y coordinates. The game piece should also freeze, and unfreeze according to game circumstances.", "Summer 2017", "Java", "Java");
 //        Portfolio currencyConverter = new Portfolio(5, "/img/portfolio/currency-runner-1.png", null, "https://github.com/jennbowers/10.2-Currency-Converter", "Currency Converter", "Created an application that converts currency to currency utlizing a basic user interface. The user can choose from a list of currencies, enter the amount they would like converted, and the currency they would like to convert their money to. The application converts their currency to dollars and then converts the amount in dollars to their desired currency. There is also added functionality to compare currencies to see which is worth more.", "Summer 2017", "Java", "Java");
 //        Portfolio virtualAtm = new Portfolio(6, "/img/portfolio/atm-class-2.png", null, "https://github.com/jennbowers/10.3-Assessment-SQL-ATM", "Virtual ATM", "An application that works are a user's personal ATM. A user can check their balance (which is calculated dynamically), make a withdrawal, and make a deposit, all with a user-friendly user interface.", "Summer 2017", "Java", "Java");
-//
+
 //        ArrayList<Portfolio> pieces = new ArrayList<>();
 //        pieces.add(hangman);
 //        pieces.add(githubProfile);
