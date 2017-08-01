@@ -154,8 +154,6 @@
                 </div>
             </div>
             <div class="row">
-                <!--th:href="#{'portfolioModal' + ${allPieces.id}}"-->
-                <!--href="#portfolioModal1"-->
                 <div class="col-md-4 col-sm-6 portfolio-item" th:each="allPieces : ${pieces}">
                     <a th:href="'#portfolioModal' + ${allPieces.id}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -188,14 +186,14 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-panel">
-                                <div class="timeline-picture">
+                                <span class="timeline-picture">
                                     <img src="/img/about/Jennifer_Bowers_web.jpg" height="343"
                                           width="300"/>
-                                </div>
-                                <div class="timeline-body">
+                                </span>
+                                <span class="timeline-body">
                                     <p class="text-muted opening-about">I am a Web Developer in the upstate of South Carolina. In the Spring of 2017, I earned a Bachelor of Arts with a concentration in Graphic Design from Anderson University, and then continued my journey to Web Development at The Iron Yard, an immersive coding bootcamp. There I learned the fundamentals of both Front and Back-End Engineering, and chose to focus on learning Java as my second programming language.</p>
                                     <p class="text-muted closing-about">My favorite part of development is working behind the scenes to make someone's life just a little bit easier, and finding the logic to make everything work exactly the way they imagined. I love building databases, solving problems, and learning more languages along the way. Moving forward, I'm excited to work with a company that helps people, believes in what they offer, and doesn't mind having fun in the process. </p>
-                                </div>
+                                </span>
                             </div>
                         </li>
                     </ul>
@@ -285,8 +283,6 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <!--th:id="'portfolioModal' + ${allPieces.id}"-->
-    <!--id="portfolioModal1"-->
     <div class="portfolio-modal modal fade" th:id="'portfolioModal' + ${allPieces.id}" th:each="allPieces : ${pieces}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -318,168 +314,6 @@
             </div>
         </div>
     </div>
-
-    <!--&lt;!&ndash; Portfolio Modal 2 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="close-modal" data-dismiss="modal">-->
-                    <!--<div class="lr">-->
-                        <!--<div class="rl">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="container">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-lg-8 col-lg-offset-2">-->
-                            <!--<div class="modal-body">-->
-                                <!--<h2>GitHub Profile</h2>-->
-                                <!--<p class="item-intro text-muted"><a href="https://jennbowers.github.io/4.4-github-profile/">See the profile on GitHub pages here!</a></p>-->
-                                <!--<p class="item-intro text-muted"><a href="https://github.com/jennbowers/4.4-github-profile">Check out the code here!</a></p>-->
-                                <!--<img class="img-responsive img-centered" src="/img/portfolio/startup-framework-preview.png" alt=""/>-->
-                                <!--<p>Given the API for GitHub, we were challenged to re-create our own GitHub profiles as closely as possible. </p>-->
-                                <!--<ul class="list-inline">-->
-                                    <!--<li>Date: Summer 2017</li>-->
-                                    <!--<li>Technologies Used: JavaScript, API, HTML, CSS</li>-->
-                                <!--</ul>-->
-                                <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Portfolio Modal 3 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="close-modal" data-dismiss="modal">-->
-                    <!--<div class="lr">-->
-                        <!--<div class="rl">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="container">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-lg-8 col-lg-offset-2">-->
-                            <!--<div class="modal-body">-->
-                                <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                                <!--<h2>Calculator</h2>-->
-                                <!--<p class="item-intro text-muted"><a href="https://jennbowers.github.io/week-three-project/">See the calculator working here!</a></p>-->
-                                <!--<p class="item-intro text-muted"><a href="https://github.com/jennbowers/week-three-project">Check out the code here!</a></p>-->
-                                <!--<img class="img-responsive img-centered" src="/img/portfolio/treehouse-preview.png" alt=""/>-->
-                                <!--<p>A calculator built primarily with JavaScript, this application allows the user to enter in any numbers and perform simple math operations that are displayed on a screen. After the user is done with an equation, they can clear the screen and begin again.</p>-->
-                                <!--<ul class="list-inline">-->
-                                    <!--<li>Date: Summer 2017</li>-->
-                                    <!--<li>Technologies Used: JavaScript, HTML, CSS</li>-->
-                                <!--</ul>-->
-                                <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Portfolio Modal 4 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="close-modal" data-dismiss="modal">-->
-                    <!--<div class="lr">-->
-                        <!--<div class="rl">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="container">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-lg-8 col-lg-offset-2">-->
-                            <!--<div class="modal-body">-->
-                                <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                                <!--<h2>Game Piece</h2>-->
-                                <!--<p class="item-intro text-muted"><a href="https://github.com/jennbowers/9.2-Assessment-GamePiece">Check out the code here!</a></p>-->
-                                <!--<img class="img-responsive img-centered" src="/img/portfolio/golden-preview.png" alt=""/>-->
-                                <!--<p>Code the beginnings of a table top game, by creating a game piece that can be moved with x and y coordinates. The game piece should also freeze, and unfreeze according to game circumstances.</p>-->
-                                <!--<ul class="list-inline">-->
-                                    <!--<li>Date: Summer 2017</li>-->
-                                    <!--<li>Technologies Used: Java</li>-->
-                                <!--</ul>-->
-                                <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Portfolio Modal 5 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="close-modal" data-dismiss="modal">-->
-                    <!--<div class="lr">-->
-                        <!--<div class="rl">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="container">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-lg-8 col-lg-offset-2">-->
-                            <!--<div class="modal-body">-->
-                                <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                                <!--<h2>Currency Converter</h2>-->
-                                    <!--<p class="item-intro text-muted"><a href="https://github.com/jennbowers/10.2-Currency-Converter">Check out the code here!</a></p>-->
-                                <!--<img class="img-responsive img-centered" src="/img/portfolio/escape-preview.png" alt=""/>-->
-                                <!--<p>Created an application that converts currency to currency utlizing a basic user interface. The user can choose from a list of currencies, enter the amount they would like converted, and the currency they would like to convert their money to. The application converts their currency to dollars and then converts the amount in dollars to their desired currency. There is also added functionality to compare currencies to see which is worth more.</p>-->
-                                <!--<ul class="list-inline">-->
-                                    <!--<li>Date: Summer 2017</li>-->
-                                    <!--<li>Technologies Used: Java</li>-->
-                                <!--</ul>-->
-                                <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Portfolio Modal 6 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="close-modal" data-dismiss="modal">-->
-                    <!--<div class="lr">-->
-                        <!--<div class="rl">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="container">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-lg-8 col-lg-offset-2">-->
-                            <!--<div class="modal-body">-->
-                                <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                                <!--<h2>Virtual ATM</h2>-->
-                                <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                                <!--<img class="img-responsive img-centered" src="/img/portfolio/dreams-preview.png" alt=""/>-->
-                                <!--<p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>-->
-                                <!--<ul class="list-inline">-->
-                                    <!--<li>Date: Summer 2017</li>-->
-                                    <!--<li>Technologies Used: Java</li>-->
-                                <!--</ul>-->
-                                <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
     <!-- jQuery -->
     <script src="/vendor/jquery/jquery.min.js"></script>
 

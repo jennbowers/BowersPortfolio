@@ -39,8 +39,7 @@ header {
 section#contact {
     /*Photo by Damian Zaleski on Unsplash*/
     background-image: url('../img/send-message.jpg');
-
-
+    background-size: cover;
 }
 
 .skills-bee {
@@ -48,10 +47,17 @@ section#contact {
     padding-bottom: 30px;
 }
 
-/*.skills-bee-node {*/
-    /*border-right: solid 2px #f1f1f1;*/
-/*}*/
+.skills-bee-node {
+    border-right: solid 2px #f1f1f1;
+}
 
-/*.fa {*/
-    /*color: #222c67;*/
-/*}*/
+.timeline > li .timeline-panel {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.fa {
+    color: #222c67;
+}
