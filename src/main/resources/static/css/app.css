@@ -32,32 +32,91 @@ header {
     color: #ffffff;
 }
 
+header .intro-text .intro-heading {
+    font-size: 65px;
+}
+
+.section-heading {
+    color: #222c67;
+}
+
 .timeline:before {
     width: 0px;
 }
 
-section#contact {
-    /*Photo by Damian Zaleski on Unsplash*/
-    background-image: url('../img/send-message.jpg');
-    background-size: cover;
-}
-
 .skills-bee {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
 }
 
 .skills-bee-node {
-    border-right: solid 2px #f1f1f1;
+    /*height: 25px;*/
+    /*border-right: solid 2px #f1f1f1;*/
+    padding-right: 3px;
+}
+
+.skills-bee-java {
+    padding-left: 3px;
+}
+
+.skills-gd-adobe {
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 .timeline > li .timeline-panel {
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
-
+    text-align: center;
+    float: left;
 }
 
-.fa {
+.timeline .timeline-picture img{
+    margin-bottom: 15px;
+}
+
+.timeline .timeline-body > p {
+    text-align: left;
+    padding-bottom: 15px;
+    width: 55%;
+    float: right;
+}
+
+section#contact {
+    /*yellow pencils*/
+    /*Photo by Joanna Kosinska on Unsplash*/
+    background-image: url('../img/joanna-kosinska-129039.jpg');
+
+    /*sticky notes*/
+    /*Photo by Steinar Engeland on Unsplash*/
+    /*background-image: url('../img/steinar-engeland-198082.jpg');*/
+
+    /*paper texture */
+    /*Photo by Brandi Redd on Unsplash*/
+    /*background-image: url('../img/brandi-redd-122054.jpg');*/
+
+    /*Photo by Damian Zaleski on Unsplash*/
+    /*background-image: url('../img/send-message.jpg');*/
+    background-size: cover;
+}
+
+section#contact .section-heading{
     color: #222c67;
+}
+
+.contact-text {
+    line-height: 1.5;
+    color: #fff;
+    /*color: #222c67;*/
+}
+
+.btn-contact {
+    background-color: #222c67;
+    border-color: #222c67;
+}
+
+ul.social-buttons li a {
+    background-color: #222c67;
+    color: #fff;
 }
