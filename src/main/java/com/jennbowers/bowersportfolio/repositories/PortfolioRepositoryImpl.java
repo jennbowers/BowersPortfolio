@@ -25,7 +25,10 @@ public class PortfolioRepositoryImpl implements PortfolioRepository {
         @Override
         public Portfolio mapRow(ResultSet resultSet, int i) throws SQLException {
             Portfolio portfolio = new Portfolio(resultSet.getLong("id"),
-                    resultSet.getString("photourl"),
+                    resultSet.getString("photourl1"),
+                    resultSet.getString("photourl2"),
+                    resultSet.getString("photourl3"),
+                    resultSet.getString("photourl4"),
                     resultSet.getString("githubpagesurl"),
                     resultSet.getString("githuburl"),
                     resultSet.getString("title"),

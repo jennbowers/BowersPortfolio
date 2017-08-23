@@ -64,6 +64,14 @@ header .intro-text .intro-heading {
     padding-bottom: 15px;
 }
 
+section h2.portfolio-section-heading {
+    margin-bottom: 25px;
+}
+
+.portfolio-item {
+    height: 295px;
+}
+
 .timeline > li .timeline-panel {
     width: 100%;
     padding-left: 0px;
@@ -74,14 +82,16 @@ header .intro-text .intro-heading {
 
 .timeline .timeline-picture img{
     margin-bottom: 15px;
+    float: right;
 }
 
 .timeline .timeline-body > p {
     text-align: left;
     padding-bottom: 15px;
-    width: 55%;
-    float: right;
+    /*width: 55%;*/
+    /*float: right;*/
 }
+
 
 section#contact {
     /*yellow pencils*/
@@ -109,6 +119,10 @@ section#contact .section-heading{
     line-height: 1.5;
     color: #fff;
     /*color: #222c67;*/
+}
+
+.contact-btn-div {
+    text-align: center;
 }
 
 .btn-contact {
