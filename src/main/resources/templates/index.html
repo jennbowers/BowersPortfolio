@@ -253,14 +253,16 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2 th:text="${allPieces.title}"></h2>
-                                <p class="item-intro text-muted"><a th:href="${allPieces.githubUrl}">Check out the code here!</a></p>
-                                <p th:if="${allPieces.githubPagesUrl}" class="item-intro text-muted"><a th:href="${allPieces.githubPagesUrl}" >See the profile on GitHub pages here!</a></p>
-                                <img class="img-responsive img-centered" th:src="${allPieces.photoUrl1}" alt=""/>
-                                <p th:text="${allPieces.description}"></p>
                                 <ul class="list-inline">
                                     <span>Date: </span><span><li th:text="${allPieces.date}"></li></span>
                                     <span>Technologies Used: </span><span><li th:text="${allPieces.technologiesUsed}"></li></span>
                                 </ul>
+                                <p th:text="${allPieces.description}"></p>
+                                <p class="item-intro text-muted"><a th:href="${allPieces.githubUrl}">Check out the code here!</a></p>
+                                <p th:if="${allPieces.liveUrl}" class="item-intro text-muted"><a th:href="${allPieces.liveUrl}" >See the application live here!</a></p>
+                                <img class="img-responsive img-centered" th:src="${allPieces.photoUrl1}" alt=""/>
+                                <img th:if="${allPieces.photoUrl2}" class="img-responsive img-centered" th:src="${allPieces.photoUrl2}" alt=""/>
+                                <img th:if="${allPieces.photoUrl3}" class="img-responsive img-centered" th:src="${allPieces.photoUrl3}" alt=""/>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>

@@ -5,8 +5,7 @@ public class Portfolio {
     private String photoUrl1;
     private String photoUrl2;
     private String photoUrl3;
-    private String photoUrl4;
-    private String githubPagesUrl;
+    private String liveUrl;
     private String githubUrl;
     private String title;
     private String description;
@@ -14,13 +13,12 @@ public class Portfolio {
     private String technologiesUsed;
     private String language;
 
-    public Portfolio(long id, String photoUrl1, String photoUrl2, String photoUrl3, String photoUrl4, String githubPagesUrl, String githubUrl, String title, String description, String date, String technologiesUsed, String language) {
+    public Portfolio(long id, String photoUrl1, String photoUrl2, String photoUrl3, String liveUrl, String githubUrl, String title, String description, String date, String technologiesUsed, String language) {
         this.id = id;
         this.photoUrl1 = photoUrl1;
         this.photoUrl2 = photoUrl2;
         this.photoUrl3 = photoUrl3;
-        this.photoUrl4 = photoUrl4;
-        this.githubPagesUrl = githubPagesUrl;
+        this.liveUrl = liveUrl;
         this.githubUrl = githubUrl;
         this.title = title;
         this.description = description;
@@ -61,14 +59,6 @@ public class Portfolio {
         this.photoUrl3 = photoUrl3;
     }
 
-    public String getPhotoUrl4() {
-        return photoUrl4;
-    }
-
-    public void setPhotoUrl4(String photoUrl4) {
-        this.photoUrl4 = photoUrl4;
-    }
-
     public String getGithubUrl() {
         return githubUrl;
     }
@@ -77,12 +67,12 @@ public class Portfolio {
         this.githubUrl = githubUrl;
     }
 
-    public String getGithubPagesUrl() {
-        return githubPagesUrl;
+    public String getLiveUrl() {
+        return liveUrl;
     }
 
-    public void setGithubPagesUrl(String githubPagesUrl) {
-        this.githubPagesUrl = githubPagesUrl;
+    public void setLiveUrl(String liveUrl) {
+        this.liveUrl = liveUrl;
     }
 
     public String getTitle() {
