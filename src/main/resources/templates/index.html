@@ -258,8 +258,8 @@
                                     <span>Technologies Used: </span><span><li th:text="${allPieces.technologiesUsed}"></li></span>
                                 </ul>
                                 <p th:text="${allPieces.description}"></p>
-                                <p class="item-intro text-muted"><a th:href="${allPieces.githubUrl}">Check out the code here!</a></p>
-                                <p th:if="${allPieces.liveUrl}" class="item-intro text-muted"><a th:href="${allPieces.liveUrl}" >See the application live here!</a></p>
+                                <p class="item-intro text-muted"><a th:href="${allPieces.githubUrl}" target="_blank">Check out the code here!</a></p>
+                                <p th:if="${allPieces.liveUrl}" class="item-intro text-muted"><a th:href="${allPieces.liveUrl}" target="_blank" >See the application live here!</a></p>
                                 <img class="img-responsive img-centered" th:src="${allPieces.photoUrl1}" alt=""/>
                                 <img th:if="${allPieces.photoUrl2}" class="img-responsive img-centered" th:src="${allPieces.photoUrl2}" alt=""/>
                                 <img th:if="${allPieces.photoUrl3}" class="img-responsive img-centered" th:src="${allPieces.photoUrl3}" alt=""/>
